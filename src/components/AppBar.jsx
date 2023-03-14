@@ -13,7 +13,7 @@ const AppBar = () => {
         <li>
           <Link to={'/about'}>About</Link>
         </li>
-        <li className='bg-indigo-700 rounded-full px-4 py-2 transition-all duration-500 hover:bg-indigo-900'>
+        <li className='animated-btn-secondary'>
           <Link to={'/login'}>Sign in</Link>
         </li>
       </ul>
