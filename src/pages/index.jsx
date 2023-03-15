@@ -1,40 +1,17 @@
-const IndexPage = () => {
-  const categories = [
-    {
-      id: 1,
-      name: 'Sports',
-    },
-    {
-      id: 2,
-      name: 'Politics',
-    },
-    {
-      id: 3,
-      name: 'Technology',
-    },
-    {
-      id: 4,
-      name: 'Wild life',
-    },
-    {
-      id: 5,
-      name: 'Travel & Tours',
-    },
-  ]
+import BlogPosts from '../components/Home/BlogPosts'
+import Categories from '../components/Home/Categories'
 
+const IndexPage = () => {
   return (
-    <div className='container flex flex-row gap-4 justify-center'>
-      <div className='col-span-2 w-[100%] md:w-[70%]'>
+    <div className='flex flex-row gap-4 justify-center'>
+      <div className='w-[100%] md:w-[70%]'>
         <p className='p-2 bg-gray-300'>Todays Feed</p>
+        <BlogPosts />
       </div>
 
-      <div className='hidden md:block w-[20%]'>
+      <div className='hidden md:block w-[20%] bg-fixed'>
         <p className='p-2 bg-gray-300'>Categories</p>
-        <div className='px-3'>
-          {categories.map((c) => (
-            <p key={c.id}>{c.name}</p>
-          ))}
-        </div>
+        <Categories />
       </div>
     </div>
   )
