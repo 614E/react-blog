@@ -3,6 +3,7 @@ const AboutPage = () => {
     <div>
       <p>About page</p>
     </div>
+    
   )
 }
 
