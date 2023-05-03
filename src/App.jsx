@@ -32,8 +32,8 @@ function App() {
       {/* end of footer */}
     </div><div class="max-w-md mx-auto bg-white rounded-xl shadow-md overflow-hidden md:max-w-2xl">
         <div class="md:flex">
-          <div class="md:shrink-2">
-            <img class="h-48 w-full object-cover md:h-full md:w-48" src={CatImage} alt="Unsplash Image" />
+          <div class="md:shrink-1">
+            <img class="h-48 w-full object-cover md:h-full md:w-50" src={CatImage} alt="Unsplash Image" />
            </div>
           <div class="p-8">
             <div class="uppercase tracking-wide text-sm text-indigo-500 font-semibold">Company retreats</div>
@@ -43,6 +43,6 @@ function App() {
         </div>
       </div></>
   )
-}
-
+}         
+4
 export default App
