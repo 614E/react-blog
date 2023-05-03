@@ -1,6 +1,6 @@
 import BlogPosts from '../components/Home/BlogPosts'
 import Categories from '../components/Home/Categories'
-
+// index
 const IndexPage = () => {
   return (
     <div className='flex flex-row gap-4 justify-center'>
