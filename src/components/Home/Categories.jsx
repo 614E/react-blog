@@ -1,11 +1,15 @@
-import { categories } from '../../constants/blog.constant'
+import { posts } from '../../constants/blog.constant'
 
 const Categories = () => {
   return (
     <div className='px-3'>
-      {categories.map((c) => (
-        <p key={c.id}>{c.name}</p>
-      ))}
+      {posts
+        .map((p) => ({ id: p.id, name: p.category }))
+        .map((c) => (
+          <p key={c.id} className='capitalize'>
+            {c.name}
+          </p>
+        ))}
     </div>
   )
 }
